@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* =========================================
+   Brand Design System — Pranashieldwellness
+   ========================================= */
+
+:root {
+  /* Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f3f8f2;
+  --color-sage: #dceedc;
+  --color-brand-green: #25834b;
+  --color-deep-green: #126336;
+  --color-brand-navy: #183d75;
+  --color-heading: #183d32;
+  --color-body: #526157;
+  --color-border: #e4ece4;
+
+  /* Typography */
+  --font-heading: var(--font-lora);
+  --font-body: var(--font-inter);
+
+  /* Spacing */
+  --section-spacing: 5rem;
+}
+
+/* Tailwind v4 theme tokens — colors are defined as CSS vars in :root */
+
+/* =========================================
+   Base Styles
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-body);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   Typography
+   ========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-lora), Georgia, serif;
+  color: var(--color-heading);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: var(--color-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================
+   Utility Classes
+   ========================================= */
+
+.section-spacing {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+}
+
+.border-brand {
+  border-color: var(--color-border);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-brand-green);
+  outline-offset: 2px;
+}
+
+/* =========================================
+   Transitions
+   ========================================= */
+
+.transition-base {
+  transition-property: color, background-color, border-color, opacity;
+  transition-timing-function: ease;
+  transition-duration: 150ms;
+}

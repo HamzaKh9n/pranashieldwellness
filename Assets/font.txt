@@ -1,0 +1,8 @@
+Usage	Font
+Main headings	Lora
+Body text	Inter
+Navigation	Inter
+Product names	Inter
+Prices	Inter
+Buttons	Inter
+Brand logo	Original logo artwork

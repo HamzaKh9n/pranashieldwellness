@@ -1,0 +1,11 @@
+2. How we'll use these colours
+Element	Colour
+Main website background	#FFFFFF
+Alternate sections	#F3F8F2
+Cards	#FFFFFF
+Primary buttons	#25834B
+Button hover	#126336
+Main headings	#183D32
+Body text	#526157
+Borders	#E4ECE4
+Small brand accents	#183D75
